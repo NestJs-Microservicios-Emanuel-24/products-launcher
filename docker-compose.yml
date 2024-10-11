@@ -4,7 +4,7 @@ services:
   nats-server:
     image: nats:2.10.21
     ports:
-      - "8222:8222"
+      - "8222:8222" 
   client-gateway:
     build: ./client-gateway
     ports:
@@ -25,7 +25,7 @@ services:
       - NATS_SERVERS=nats://nats-server:4222
       - DATABASE_URL=file:./dev.db
 
-#Order microservices
+  #Order microservices
   orders-ms:
     depends_on:
       - orders-db
@@ -48,4 +48,7 @@ services:
       - 5432:5432
     environment:
       - POSTGRES_USER=postgres
-      - POSTGRES_PASSWORD=postgres - POSTGRES_DB=ordersDB
+      - POSTGRES_PASSWORD=postgres
+      - POSTGRES_DB=ordersDB
+
+
