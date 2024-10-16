@@ -2,6 +2,9 @@
 
 Este proyecto contiene una arquitectura de microservicios desarrollada con NestJS y orquestada con Docker Compose. Incluye un gateway de cliente y varios microservicios.
 
+
+## error postgress
+sudo chmod -R 775 /home/emanuel/proyectos/microservicios_nestjs/03-products-launcher/orders-ms/
 ## Requisitos Previos
 
 - Docker
